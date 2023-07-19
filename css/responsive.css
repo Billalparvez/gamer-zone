@@ -1,3 +1,6 @@
+
+
+/* mediam */
 @media screen and (max-width:576px) {
 
     .nav-container,
@@ -26,7 +29,7 @@
         width: 100%;
     }
     .gamer-description{
-     padding:0 20px;
+     padding:10px;
        text-align: center;
     }
     /* gamer */
@@ -62,9 +65,14 @@
     .banner-content h1 {
         font-size: 60px;
     }
-
+    .online-game-section .title{
+        font-size: 25px;
+    }.online-game-section p{
+        font-size: 12px;
+    }
     .card {
-        margin-left: -20px;
+        margin-left: -25px;
+        margin-bottom:20px
     }
 
     .card img {
@@ -102,7 +110,9 @@
         margin-left: 0;
         text-align: center;
     }
-
+    .gamer-content{
+        padding: 0;
+    }
     .top-img img {
         width: 80%;
     }
@@ -183,14 +193,71 @@
 
     }
 
-    .last>p {
-        /* display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 80%;
-        margin: auto; */
+}
 
+/* tab */
+@media screen and (min-width:576px) and (max-width:992px) {
+    
+    .gamer-container,.play,.game{
+        flex-direction: column;
+    }
+    .banner-container,.nav-container,.card-container{
+        width: 100%;
+    }
+    .banner-content,.banner-img{
+        width: 100%;
+    }
+    .gamer-image img{
+        width: 100%;
+        margin-left: 130px;
+    }
+    .gamer-content{
+        width: auto;
+        text-align: center;
+    }
+    .gamer-description{
+        width: 700px;
+        margin: 0 auto 20px;
     }
 
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .card{
+        width: 100%;
+        margin-bottom: 110px;
+    }
 
-
+    .game{
+        flex-direction: column-reverse;
+    }
+    
+    .play-content{
+        margin-right: 0;
+        text-align: center;
+        
+    }
+    .play-content p,.game-content p{
+        font-size: 20px;
+        width: 600px;
+        margin-bottom: 20px;
+    }
+    .game-content{
+        margin-left: -50px;
+    }
+    .game img,.play img{
+        width: 80%;
+    }
+    .bottom-img img,.right-img img{
+        width: 50%;
+        
+    }
+    .bottom-img img{
+        margin-top: 150px;
+        margin-left: 50px;
+    }
+    .right-img img{
+        margin-top: 200px;
+    }
 }

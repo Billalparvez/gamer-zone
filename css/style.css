@@ -4,7 +4,7 @@
 }
 
 nav {
-    background-color: aquamarine;
+    background-color: #FFFFFF;
 }
 
 .nav-container {
@@ -248,6 +248,14 @@ nav {
     height: 400px;
 }
 
+/* .card-container .card:hover {
+    cursor: pointer;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
 .card img {
     width: 100%;
 }
@@ -270,7 +278,7 @@ nav {
 
 /* end-online-game-style */
 
-/* play-style-start */
+/* style-start-play-section */
 .play,
 .game {
     max-width: 1200px;
@@ -340,6 +348,8 @@ nav {
     margin-left: 500px;
 }
 
+/* end-play-game-style */
+
 /* icons-style */
 .icon-container {
     max-width: 1200px;
@@ -363,6 +373,7 @@ nav {
     gap: 10px;
 
 
+
 }
 
 .single-icon {
@@ -376,8 +387,11 @@ nav {
 }
 
 .single-icon:hover {
+
     cursor: pointer;
     border: 1px solid tomato;
+}
+.single-icon p:hover{
     color: tomato;
 }
 
@@ -417,15 +431,16 @@ footer {
 
 .footer-description,
 .description {
-    width: 600px;
+    width: 800px;
     margin: 20px auto;
     display: flex;
-    /* justify-content: space-around; */
+    justify-content: space-evenly;
     gap: 50px;
     text-align: center;
     justify-content: center;
 
 }
+
 
 .footer-icon a {
     color: white;
