@@ -59,9 +59,27 @@ nav {
     margin-right: 10px;
 }
 
+.follow-item {
+    background-color: #E7E6E9;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.follow-item i {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    color: red;
+}
+
+.follow-item .fa-tiktok {
+    color: black;
+}
+
 .nav-menu-list {
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .nav-menu-list li {
@@ -87,6 +105,24 @@ nav {
 .banner-content {
     width: 50%;
     /* border: 1px solid tomato; */
+}
+
+.banner-description>a {
+    color: #534C64;
+    font-size: 50px;
+    font-weight: 500;
+
+}
+
+.btn-content {
+    margin-top: 20px
+}
+
+.fa-solid,
+.fa-regular {
+    margin-right: 10px;
+    color: red;
+
 }
 
 .banner-title {
@@ -128,24 +164,80 @@ nav {
     object-fit: cover;
 }
 
-/* banner-style-start */
+/* banner-style-end */
 
-/* funney video-style */
+/* gamer-style-start */
+.gamer-container {
 
-.video-game {
+    max-width: 1200px;
+    margin: 50px auto 0;
+    display: flex;
+    gap: 30px;
+}
 
+.gamer-image {
+    width: 60%;
+    /* background-color: peru; */
+}
+
+.gamer-image img {
+    width: 100%;
+
+
+}
+
+.gamer-content {
+    width: 40%;
+    /* background-color: purple; */
+    text-align: right;
+    padding: 20px;
+}
+
+.gamer-title {
+    font-size: 45px;
+    font-weight: 800;
+    background-image: linear-gradient(to bottom, #F948B2, #8758F1);
+    color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+.gamer-description {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 20px 0;
+}
+
+.gamer-content button {
+    margin-bottom: 20px;
+}
+
+.unleash {
+    color: #534C64;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* gamer-style-end */
+
+/* online-game-style */
+
+.online-game-section {
     max-width: 1200px;
     margin: 100px auto 0;
     text-align: center;
 }
 
-.video-game h1 {
+.online-game-section .title {
+
     color: #0B0223;
     font-size: 48px;
     font-weight: 700;
 }
 
-.video-game p {
+.online-game-section p {
     color: #534C64;
     font-size: 18px;
     font-weight: 400;
@@ -176,7 +268,7 @@ nav {
     line-height: 30px;
 }
 
-/* funney video-style */
+/* end-online-game-style */
 
 /* play-style-start */
 .play,
@@ -198,10 +290,6 @@ nav {
 
 }
 
-.play-content,
-.play-images {
-    border: 1px solid turquoise;
-}
 
 .play-content .play-title {
     font-size: 48px;
@@ -255,29 +343,42 @@ nav {
 /* icons-style */
 .icon-container {
     max-width: 1200px;
-    margin: 150px auto 0;
+    margin: 150px auto 100px
+}
+
+.icon-content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
 }
 
 .icons {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    /* display: flex; */
-    /* align-content: flex-start; */
-    gap: 10px
+    gap: 10px;
 
 
 }
 
 .single-icon {
-    max-width: 320px;
+    width: 220px;
     height: 60px;
-    border: 1px solid tomato;
+    border: 3px solid rgb(255, 255, 255);
     border-radius: 50px;
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.single-icon:hover {
+    cursor: pointer;
+    border: 1px solid tomato;
+    color: tomato;
 }
 
 .single-icon p {
@@ -289,4 +390,53 @@ nav {
 .single-icon img {
     width: 50px;
     height: 50px;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    background-color: #0B0223;
+    height: 400px;
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-title {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+
+.footer-title img {
+    margin-right: 20px;
+}
+
+.footer-description,
+.description {
+    width: 600px;
+    margin: 20px auto;
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 50px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.footer-icon a {
+    color: white;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.description,
+.footer-last-item {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
 }
